@@ -61,6 +61,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlternativePieChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlternativePieChart.Designer.cs">
+      <DependentUpon>AlternativePieChart.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataTable.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -74,6 +80,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AlternativePieChart.resx">
+      <DependentUpon>AlternativePieChart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

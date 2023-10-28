@@ -33,5 +33,11 @@ namespace Assigment_2_Charts
         {
             pieChart1.LegendLocation = LegendLocation.Bottom;
         }
+
+        private void switchbtn_Click(object sender, EventArgs e)
+        {
+            AlternativePieChart alternativePieChart = new AlternativePieChart();
+            alternativePieChart.Show();
+        }
     }
 }

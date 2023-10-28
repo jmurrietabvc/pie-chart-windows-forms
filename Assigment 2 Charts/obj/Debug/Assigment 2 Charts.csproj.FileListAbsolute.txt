@@ -18,3 +18,4 @@ C:\Users\user\Desktop\Rapid Web Application\Pie Chart\pie-chart-windows-forms\As
 C:\Users\user\Desktop\Rapid Web Application\Pie Chart\pie-chart-windows-forms\Assigment 2 Charts\bin\Debug\LiveCharts.WinForms.xml
 C:\Users\user\Desktop\Rapid Web Application\Pie Chart\pie-chart-windows-forms\Assigment 2 Charts\bin\Debug\LiveCharts.Wpf.pdb
 C:\Users\user\Desktop\Rapid Web Application\Pie Chart\pie-chart-windows-forms\Assigment 2 Charts\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\user\Desktop\Rapid Web Application\Pie Chart\pie-chart-windows-forms\Assigment 2 Charts\obj\Debug\Assigment_2_Charts.AlternativePieChart.resources

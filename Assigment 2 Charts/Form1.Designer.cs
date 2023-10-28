@@ -30,16 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnLoad = new System.Windows.Forms.Button();
-            this.dataTable = new Assigment_2_Charts.DataTable();
-            this.revenueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.revenueBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataTable = new Assigment_2_Charts.DataTable();
+            this.btnLoad = new System.Windows.Forms.Button();
             this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
             this.pieChart1 = new LiveCharts.Wpf.PieChart();
+            this.switchbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -57,26 +58,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(335, 150);
             this.dataGridView1.TabIndex = 0;
             // 
-            // btnLoad
-            // 
-            this.btnLoad.Location = new System.Drawing.Point(869, 207);
-            this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(94, 45);
-            this.btnLoad.TabIndex = 1;
-            this.btnLoad.Text = "Load";
-            this.btnLoad.UseVisualStyleBackColor = true;
-            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
-            // 
-            // dataTable
-            // 
-            this.dataTable.DataSetName = "DataTable";
-            this.dataTable.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // revenueBindingSource
-            // 
-            this.revenueBindingSource.DataMember = "Revenue";
-            this.revenueBindingSource.DataSource = this.dataTable;
-            // 
             // yearDataGridViewTextBoxColumn
             // 
             this.yearDataGridViewTextBoxColumn.DataPropertyName = "Year";
@@ -93,6 +74,26 @@
             this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
             this.totalDataGridViewTextBoxColumn.Width = 150;
             // 
+            // revenueBindingSource
+            // 
+            this.revenueBindingSource.DataMember = "Revenue";
+            this.revenueBindingSource.DataSource = this.dataTable;
+            // 
+            // dataTable
+            // 
+            this.dataTable.DataSetName = "DataTable";
+            this.dataTable.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btnLoad
+            // 
+            this.btnLoad.Location = new System.Drawing.Point(869, 207);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(94, 45);
+            this.btnLoad.TabIndex = 1;
+            this.btnLoad.Text = "Load";
+            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            // 
             // elementHost1
             // 
             this.elementHost1.Location = new System.Drawing.Point(57, 82);
@@ -102,11 +103,22 @@
             this.elementHost1.Text = "elementHost1";
             this.elementHost1.Child = this.pieChart1;
             // 
+            // switchbtn
+            // 
+            this.switchbtn.Location = new System.Drawing.Point(727, 305);
+            this.switchbtn.Name = "switchbtn";
+            this.switchbtn.Size = new System.Drawing.Size(196, 45);
+            this.switchbtn.TabIndex = 3;
+            this.switchbtn.Text = "Swith to other Chart";
+            this.switchbtn.UseVisualStyleBackColor = true;
+            this.switchbtn.Click += new System.EventHandler(this.switchbtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 537);
+            this.Controls.Add(this.switchbtn);
             this.Controls.Add(this.elementHost1);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.dataGridView1);
@@ -115,8 +127,8 @@
             this.Text = "Assigment 2";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -131,6 +143,7 @@
         private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.Integration.ElementHost elementHost1;
         private LiveCharts.Wpf.PieChart pieChart1;
+        private System.Windows.Forms.Button switchbtn;
     }
 }
 
